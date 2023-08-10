@@ -1,0 +1,16 @@
+[package]
+name = "weather"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[profile.release]
+debug = true
+
+[dependencies]
+fastly = "0.9.5"
+serde_json = "1.0.104"
+tinytemplate = "1.2.1"
+serde = { version = "1.0", features = ["derive"] }
+chrono = "0.4.26"
+weather_helpers = "0.1.3"
